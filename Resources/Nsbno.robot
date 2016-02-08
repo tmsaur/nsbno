@@ -2,9 +2,6 @@
 Documentation    NSB.no test sutie
 Library  Selenium2Library
 
-*** Test Cases ***
-
-
 *** Keywords ***
 Sok reise
     wait until page contains  Hvor vil du reise?
@@ -15,14 +12,15 @@ Velg reise fra sokeresultat
     wait until page contains  Oslo S – Bergen
     select radio button  departure   1f
     click button  id=selectjourney-submit_form
-Velg seteplassering 1 passasjer
+Velg ikke seteplassering 1 passasjer
     wait until page contains  Tog Region mot Bergen
-    click link  Velg sete
-    wait until page contains  Hvor vil du sitte?
-    click link  65
-    click element  css=input.nsb-js-click-tracking-seats.nsb-button
+    ##click link  Velg sete
+    #wait until page contains  Hvor vil du sitte?
+    #click link  65
+    #click element  css=input.nsb-js-click-tracking-seats.nsb-button
     click button  id=selectjourney-submit_form
 Login ved bestilling
+    wait until page contains  Ved å logge inn får du
     input text  id=username  tor.martin.saur@nsb.no
     input password  id=login-password  tqeCRSWf
     click element  css=input.nsb-button.nsb-button-primary
