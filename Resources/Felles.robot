@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation    Suite description
 Library  Selenium2Library
+Library  SauceLabs
 
 *** Variables ***
 ${BROWSER} =  ie
