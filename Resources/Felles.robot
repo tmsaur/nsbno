@@ -4,7 +4,7 @@ Library  Selenium2Library
 
 *** Variables ***
 ${BROWSER} =  ie
-${START_URL} =  https://test3web.nsb.no
+${START_URL} =  https://stagingweb.nsb.no/
 ${REMOTE_URL} =  http://nsbtest:65ce844f-5458-4dd7-b149-92208ab7fb9a@ondemand.saucelabs.com:80/wd/hub
 ${DESIRED_CAPABILITIES} =   name:Win8 + Chrome 43,platform:Windows 8.1,browserName:chrome,version:43
 #>pybot -d results tests/nsbno.robot
