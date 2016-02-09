@@ -15,7 +15,7 @@ Begin web test
     #open browser  anout:blank  ie
      #go to  https://test3web.nsb.no
     #remote_url= desired_capabilities=name:Win8 + Chrome 43,platform:Windows 8.1,browserName:chrome,version:43
-    open browser  ${START_URL} ${BROWSER}  remote_url=${REMOTE_URL}  desired_capabilities=${DESIRED_CAPABILITIES}
+    open browser  ${START_URL}  ${BROWSER}  remote_url=${REMOTE_URL}  desired_capabilities=${DESIRED_CAPABILITIES}
     #go to  https://stagingweb.nsb.no/
     maximize browser window
 
