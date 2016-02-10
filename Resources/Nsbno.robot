@@ -26,7 +26,7 @@ Login ved bestilling
     click element  css=input.nsb-button.nsb-button-primary
 Betal togbillett
     wait until page contains  Dine togbilletter
-    select checkbox  css=input#terms-check.nsb-input-checkbox
+    select checkbox  id=terms-check
     click element  css=input.nsb-button.nsb-button-primary.btn-pay
     input password  id=password  tqeCRSWf
     click element  css=input.btn
