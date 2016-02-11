@@ -25,9 +25,10 @@ Login ved bestilling
     input password  id=login-password  tqeCRSWf
     click element  css=input.nsb-button.nsb-button-primary
 Betal togbillett
-    wait until page contains  Dine togbilletter
+    wait until page contains  Personlige opplysninger
     select checkbox  id=terms-check
     click element  css=input.nsb-button.nsb-button-primary.btn-pay
+     wait until element is visible  id=password
     input password  id=password  tqeCRSWf
     click element  css=input.btn
 Send PDF-togbillett til togpassasjers epost-adresse
