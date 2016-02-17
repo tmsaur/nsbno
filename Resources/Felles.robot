@@ -12,10 +12,10 @@ ${DESIRED_CAPABILITIES} =   name:Win8.1 + IE 11,platform:Windows 8.1,browserName
 
 *** Keywords ***
 Begin web test
-     open browser  anout:blank  ${BROWSER}
-     go to   ${START_URL}
+     #open browser  anout:blank  ${BROWSER}
+     #go to   ${START_URL}
     #remote_url= desired_capabilities=name:Win8 + Chrome 43,platform:Windows 8.1,browserName:chrome,version:43
-     #open browser  ${START_URL}  ${BROWSER}  remote_url=${REMOTE_URL}  desired_capabilities=${DESIRED_CAPABILITIES}
+     open browser  ${START_URL}  ${BROWSER}  remote_url=${REMOTE_URL}  desired_capabilities=${DESIRED_CAPABILITIES}
     #go to  https://stagingweb.nsb.no/
     maximize browser window
 
