@@ -6,7 +6,7 @@ Library  Selenium2Library
 Sok reise
     wait until page contains  Hvor vil du reise?
     input text  id=from  Oslo S
-    input text  id=dest  Bergen
+    input text  id=dest  Drammen
     click button  id=searchJourney
 Velg reise fra sokeresultat
     wait until page contains  Oslo S – Bergen
